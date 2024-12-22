@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹사이트</title>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="main"></div>
+    <div id="content"></div>
+    <div id="footer"></div>
+
+    <script>
+        // 각 부분의 HTML 파일 로드
+        async function loadHTML(id, url) {
+            const response = await fetch(url);
+            const text = await response.text();
+            document.getElementById(id).innerHTML = text;
+        }
+
+        // 각 영역에 파일 로드
+        loadHTML('header', 'header01.html');
+        loadHTML('main', 'main01.html');
+        loadHTML('content', 'content01.html');
+        loadHTML('footer', 'footer01.html');
+    </script>
+</body>
+</html>

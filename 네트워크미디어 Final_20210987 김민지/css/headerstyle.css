@@ -1,0 +1,47 @@
+/* styles.css */
+@font-face {
+    font-family: 'sogang university';
+    src: url('sogang university.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* 기본 글씨체 */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    /*width: 50px; /* 로고 크기 조정 */
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .sogang-text {
+    font-family: "sogang university", Arial, sans-serif; /* Sogang 글씨체 */
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  .menu a:hover {
+    color: #007BFF;
+  }

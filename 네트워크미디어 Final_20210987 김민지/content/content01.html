@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .blind{
+            width: 0;
+            height: 0;
+            line-height: 0;
+            overflow: hidden;
+            position: absolute;
+            text-indent: -9999px;
+        }
+
+        /* common */
+        .container{
+            width: 100%;
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .section{
+            padding: 50px 0;
+        } 
+
+
+        .content_inner{
+            display: flex;
+            justify-content: space-between;
+        }
+        .calendar{
+            width: 40%;
+            height: 800px;
+            margin-left: 80px;
+        }
+        .calendar h4{
+            font-size: 17px;
+            margin-bottom: 40px;
+        }
+        .calendar_week{
+            margin-bottom: 40px;
+        }
+        .notice{
+            width: 40%;
+            height: 800px;
+            margin-right: 80px;
+        }
+        
+         .notice_header{
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+         }
+
+         .notice_header h4{
+            font-size: 17px;
+            /* margin-bottom: 25px; */
+         }
+
+         .notice_btn{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            margin: 0;
+            /* margin-bottom: 15px; */
+            background: #f5f5f5;
+            padding: 7px 13px;
+            border-radius: 5px;
+            display: inline-block;
+         }
+
+        .notice_btn:hover{
+            color: #0056b3;
+         }
+         .notice_content ul{
+            list-style-type: none;
+            padding: 0;
+         }
+         .notice_content li{
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+         }
+
+         .notice_content li:hover{
+            background-color: #f1f1f1;
+         }
+         a{
+            text-decoration: none;
+            font-size: 13px;
+         }
+         a:hover{
+            text-decoration: underline;
+         }
+
+
+
+    </style>
+</head>
+<body>
+    <section id="contentType" class="content_wrap section">
+        <h2 class="blind">컨텐츠</h2>
+        <div class="content_inner">
+            <div class="calendar">
+                <h1>복사 일정</h1>
+                <div class="calendar_week">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=230&wkst=1&ctz=Asia%2FSeoul&showPrint=0&showCalendars=0&showTitle=0&mode=AGENDA&src=Yzg3NzZiOTI2YzY2ZDBhNjliODljZGU3N2FiN2UyZTI5MjIyOGUzNWU1YzcyZDJjNzk0ZDQ1NTk0NThjZWI5NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MmFkOGM0ZTNjZDY5ZjdkZmVkYTNmN2ZhMGU0ODBkMTY0NzhmYWZmNWQ0MWM4OGZmMGZkNGZjMjU1NWUxOTI4OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MDVlNjRjNGRmM2I0ZmFhODVmZmQ5NDZhNjcyMzdiNTM3YzY4MzA2YmEyZDU2MjM4MjllNDg2YzBkODViZWRlMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%237986CB&color=%23B39DDB&color=%23bf1d1a" style="border-width:0" width="450" height="230" frameborder="0" scrolling="no"></iframe>
+                </div>
+                <div class="calendar_month">
+                    <iframe src="https://calendar.google.com/calendar/embed?height=430&wkst=1&ctz=Asia%2FSeoul&showPrint=0&showCalendars=0&showTitle=0&mode=MONTH&src=Yzg3NzZiOTI2YzY2ZDBhNjliODljZGU3N2FiN2UyZTI5MjIyOGUzNWU1YzcyZDJjNzk0ZDQ1NTk0NThjZWI5NkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MmFkOGM0ZTNjZDY5ZjdkZmVkYTNmN2ZhMGU0ODBkMTY0NzhmYWZmNWQ0MWM4OGZmMGZkNGZjMjU1NWUxOTI4OUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MDVlNjRjNGRmM2I0ZmFhODVmZmQ5NDZhNjcyMzdiNTM3YzY4MzA2YmEyZDU2MjM4MjllNDg2YzBkODViZWRlMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23E67C73&color=%237986CB&color=%23B39DDB&color=%23bf1d1a" style="border-width:0" width="450" height="430" frameborder="0" scrolling="no"></iframe>
+                </div>
+
+            </div>
+            <div class="notice">
+                <div class="notice_header">
+                    <h4>공지사항</h4>
+                    <a href="web_notice.html" class="notice_btn">+</a>
+                </div>
+                <div class="notice_content">
+                    <ul>
+                        <li><a href="notice5.html">12/21(토) 콘클라베 공지</a></li>
+                        <li><a href="notice4.html">2025년 1학기 교목처 하비에르 장학금</a></li>
+                        <li><a href="notice3.html">11/16(토) 홈커밍 공지</a></li>
+                        <li><a href="notice2.html">11/8(금) 가을 엠티 공지</a></li>
+                        <li><a href="notice1.html">10/20(일) 회합 공지</a></li>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
